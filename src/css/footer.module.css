@@ -1,0 +1,8 @@
+.footerMain {
+  background-color: orange;
+  padding: 2px;
+  bottom: 0;
+}
+.footerContent {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

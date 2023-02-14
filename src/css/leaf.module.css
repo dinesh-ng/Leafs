@@ -1,0 +1,15 @@
+.leafMain {
+  background-color: lightgreen;
+  width: 12rem;
+  height: 12rem;
+  padding: 2px;
+  margin: 20px 15px;
+  box-shadow: 3px 3px 3px 3px grey;
+  border-radius: 5px;
+}
+.leafTitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.leafContent {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
