@@ -9,7 +9,10 @@
 }
 .leafTitle {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2px;
 }
 .leafContent {
+  padding: 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
