@@ -1,4 +1,5 @@
 .leafMain {
+  background-image: url("https://images.unsplash.com/photo-1618507763251-9ea0a27ef29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGVhZiUyMGNsb3NlJTIwdXB8ZW58MHx8MHx8&w=1000&q=80");
   background-color: lightgreen;
   width: 12rem;
   height: 12rem;
@@ -15,4 +16,5 @@
   padding: 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
+  color: white;
 }

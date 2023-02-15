@@ -1,10 +1,10 @@
 import styles from "../css/leaf.module.css";
-const Leaf = () => {
+const Leaf = (props) => {
   return (
     <>
       <div className={styles.leafMain}>
-        <h3 className={styles.leafTitle}>Arrays and Strings</h3>
-        <p className={styles.leafContent}>Complete all the questions.</p>
+        <h3 className={styles.leafTitle}>{props.title}</h3>
+        <p className={styles.leafContent}>{props.content}</p>
       </div>
     </>
   );
