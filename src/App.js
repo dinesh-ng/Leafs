@@ -4,13 +4,14 @@ import Footer from "./components/Footer";
 import Leaf from "./components/Leaf";
 import leafData from "./leafData";
 
+const createLeaf = (leaf) => {
+  return <Leaf key={leaf.id} title={leaf.title} content={leaf.content} />;
+};
 function App() {
   return (
     <div className="App">
       <Header />
-      {leafData.map((leaf) => (
-        <Leaf key={leaf.id} title={leaf.title} content={leaf.content} />
-      ))}
+      {leafData.map(createLeaf)}
       <Footer />
     </div>
   );

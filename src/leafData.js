@@ -1,18 +1,18 @@
 const leafData = [
   {
     id: 1,
-    title: "Arrays and Strings",
-    content: "Complete last two.",
+    title: "DSA",
+    content: "arrays, strings, sliding window MUST",
   },
   {
     id: 2,
-    title: "Strings",
-    content: "Have to start.",
+    title: "Dev",
+    content: "React must",
   },
   {
     id: 3,
-    title: "Dev",
-    content: "Dice project: disconnect issue.",
+    title: "OS",
+    content: "2 lectures MUST",
   },
 ];
 export default leafData;
