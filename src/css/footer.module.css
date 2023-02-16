@@ -1,6 +1,8 @@
 .footerMain {
   padding: 2px;
   width: 100%;
+  /* position: absolute;
+  bottom: 0; */
 }
 .footerContent {
   font-family: Verdana, Geneva, Tahoma, sans-serif;

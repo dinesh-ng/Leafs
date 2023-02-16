@@ -1,0 +1,12 @@
+.buttonMain {
+  width: 80px;
+  height: 30px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonMain:hover {
+  background-color: lightblue;
+  color: black;
+}

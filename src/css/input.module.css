@@ -1,0 +1,12 @@
+.inputBox {
+  height: 40px;
+  width: 200px;
+  margin: 10px auto;
+  border: 3px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+}
+.inputBox:focus {
+  border: 4px solid lightblue;
+}
