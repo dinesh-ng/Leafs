@@ -5,7 +5,13 @@ import Leaf from "./components/Leaf";
 import leafData from "./leafData";
 
 const createLeaf = (leaf) => {
-  return <Leaf key={leaf.id} title={leaf.title} content={leaf.content} />;
+  return (
+    <Leaf
+      key={leaf.id}
+      title={leaf.title}
+      content={leaf.content.substring(0, 60)}
+    />
+  );
 };
 function App() {
   return (

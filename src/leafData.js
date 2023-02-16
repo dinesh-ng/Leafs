@@ -7,12 +7,12 @@ const leafData = [
   {
     id: 2,
     title: "Dev",
-    content: "React must",
+    content: "React MUST",
   },
   {
     id: 3,
     title: "OS",
-    content: "2 lectures MUST",
+    content: "2 lectures MUST ",
   },
 ];
 export default leafData;
