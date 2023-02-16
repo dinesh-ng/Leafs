@@ -9,12 +9,12 @@
   border-radius: 5px;
 }
 .leafTitle {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Patrick Hand", cursive;
   padding: 2px;
 }
 .leafContent {
   padding: 2px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Patrick Hand", cursive;
   overflow: hidden;
   color: white;
 }

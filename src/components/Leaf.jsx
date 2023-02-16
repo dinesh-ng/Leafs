@@ -3,7 +3,7 @@ const Leaf = (props) => {
   return (
     <>
       <div className={styles.leafMain}>
-        <h3 className={styles.leafTitle}>{props.title}</h3>
+        <h2 className={styles.leafTitle}>{props.title}</h2>
         <p className={styles.leafContent}>{props.content}</p>
       </div>
     </>
