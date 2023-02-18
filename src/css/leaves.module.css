@@ -1,0 +1,13 @@
+.leaves {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+.buttonMain {
+  background-color: blue;
+  color: white;
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+}
