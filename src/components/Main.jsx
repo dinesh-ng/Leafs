@@ -56,7 +56,7 @@ const Main = (props) => {
               value={newleaf.content}
               onChange={handleChange}
             ></textarea>
-            <button className={leafStyles.checkBox} onClick={handleSubmit}>
+            <button className={leafStyles.addNewBtn} onClick={handleSubmit}>
               +
             </button>
           </div>

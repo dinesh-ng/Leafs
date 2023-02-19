@@ -47,10 +47,29 @@
   text-align: center;
   width: 10rem;
   margin: 2px auto;
+  border: none;
 }
 .newLeafContent {
   background-color: transparent;
   width: 10rem;
   height: 7rem;
   margin: 2px auto;
+  border: none;
+  resize: none;
+}
+.addNewBtn {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.addNewBtn:hover {
+  background-color: white;
+  color: black;
 }
