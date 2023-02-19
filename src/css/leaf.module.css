@@ -42,3 +42,15 @@
   width: 20px;
   height: 20px;
 }
+.newLeafTitle {
+  background-color: transparent;
+  text-align: center;
+  width: 10rem;
+  margin: 2px auto;
+}
+.newLeafContent {
+  background-color: transparent;
+  width: 10rem;
+  height: 7rem;
+  margin: 2px auto;
+}

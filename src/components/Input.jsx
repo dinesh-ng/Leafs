@@ -6,6 +6,7 @@ const Input = (props) => (
       className={styles.inputBox}
       type={props.type}
       placeholder={props.placeholder}
+      value={props.value}
     ></input>
   </>
 );
