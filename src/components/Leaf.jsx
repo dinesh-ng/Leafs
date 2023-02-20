@@ -17,7 +17,8 @@ const Leaf = (props) => {
         <input
           className={styles.checkBox}
           type="checkbox"
-          onChange={handleChange}
+          // onChange={handleChange}
+          onChange={props.onDelete}
         ></input>
       </div>
     </>

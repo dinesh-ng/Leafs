@@ -1,8 +1,9 @@
-import leafData from "../utils/leafData";
-import Leaf from "./Leaf";
-import styles from "../css/leaves.module.css";
-import leafStyles from "../css/leaf.module.css";
 import { useState } from "react";
+import Leaf from "./Leaf";
+import CreateLeaf from "./CreateLeaf";
+import styles from "../css/landingPage.module.css";
+import leafData from "../utils/leafData";
+
 const Main = (props) => {
   const [localtime, setLocalTime] = useState(null);
   setInterval(() => {
@@ -11,61 +12,24 @@ const Main = (props) => {
     setLocalTime(date);
   }, 1000);
 
-  const getKey = () => new Date().toLocaleTimeString();
-  const [newleaf, setNewleaf] = useState({
-    id: getKey(),
-    title: "New work!",
-    content: "things to do...",
-  });
-
-  const handleChange = (e) => {
-    console.log(e.target.name);
-    setNewleaf((prev) => ({
-      ...prev,
-      id: getKey(),
-      [e.target.name]: e.target.value,
-    }));
+  const handleDelete = (id) => {
+    console.log(id);
+    // leafData = leafData.filter((leaf, idx) => {
+    //   return id !== idx;
+    // });
   };
-
-  const handleSubmit = (e) => {
-    console.log(e.target.name);
-    leafData.push(newleaf);
-    setNewleaf({
-      id: getKey(),
-      title: "New work!",
-      content: "things to do...",
-    });
-  };
-
   return (
     <>
       <div className={styles.leaves}>
-        <>
-          <div className={leafStyles.activeStyle}>
-            <input
-              className={leafStyles.leafTitle + " " + leafStyles.newLeafTitle}
-              name="title"
-              value={newleaf.title}
-              onChange={handleChange}
-            ></input>
-            <textarea
-              className={
-                leafStyles.leafContent + " " + leafStyles.newLeafContent
-              }
-              name="content"
-              value={newleaf.content}
-              onChange={handleChange}
-            ></textarea>
-            <button className={leafStyles.addNewBtn} onClick={handleSubmit}>
-              +
-            </button>
-          </div>
-        </>
+        <CreateLeaf />
         {leafData.map((leaf) => (
           <Leaf
             key={leaf.id}
             title={leaf.title}
             content={leaf.content.substring(0, 60)}
+            onDelete={() => {
+              handleDelete(leaf.id);
+            }}
           />
         ))}
       </div>
