@@ -1,7 +1,6 @@
 .headerMain {
-  background-color: #18c854;
+  /* background-color: #18c854; */
+  color: whitesmoke;
+  font-family: "Patrick Hand", cursive;
   padding: 2px;
-}
-.headerTitle {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

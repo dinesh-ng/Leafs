@@ -5,13 +5,6 @@ import styles from "../css/landingPage.module.css";
 import leafData from "../utils/leafData";
 
 const Main = (props) => {
-  const [localtime, setLocalTime] = useState(null);
-  setInterval(() => {
-    const date = new Date().toLocaleTimeString();
-
-    setLocalTime(date);
-  }, 1000);
-
   const [allLeaves, setAllLeaves] = useState(leafData);
   const handleDelete = (id) => {
     console.log(id);
@@ -38,7 +31,7 @@ const Main = (props) => {
           />
         ))}
       </div>
-      <h1>{localtime}</h1>
+      {/* <h1>{localtime}</h1> */}
     </>
   );
 };
