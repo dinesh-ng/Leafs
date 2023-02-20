@@ -15,7 +15,10 @@ const Main = (props) => {
     });
   };
   const createLeaf = (newleaf) => {
-    allLeaves.push(newleaf);
+    // allLeaves.push(newleaf);
+    setAllLeaves((prev) => {
+      return [...prev, newleaf];
+    });
   };
   return (
     <>
