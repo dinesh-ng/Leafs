@@ -12,24 +12,29 @@ const Main = (props) => {
     setLocalTime(date);
   }, 1000);
 
+  const [allLeaves, setAllLeaves] = useState(leafData);
   const handleDelete = (id) => {
     console.log(id);
-    // leafData = leafData.filter((leaf, idx) => {
-    //   return id !== idx;
-    // });
+    setAllLeaves((prev) => {
+      return allLeaves.filter((leaf) => {
+        return id !== leaf.id;
+      });
+    });
+  };
+  const createLeaf = (newleaf) => {
+    allLeaves.push(newleaf);
   };
   return (
     <>
       <div className={styles.leaves}>
-        <CreateLeaf />
-        {leafData.map((leaf) => (
+        <CreateLeaf addLeaf={createLeaf} />
+        {allLeaves.map((leaf) => (
           <Leaf
             key={leaf.id}
+            id={leaf.id}
             title={leaf.title}
             content={leaf.content.substring(0, 60)}
-            onDelete={() => {
-              handleDelete(leaf.id);
-            }}
+            onDelete={handleDelete}
           />
         ))}
       </div>

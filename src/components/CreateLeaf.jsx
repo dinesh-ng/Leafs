@@ -1,6 +1,5 @@
 import { useState } from "react";
 import leafStyles from "../css/leaf.module.css";
-import leafData from "../utils/leafData";
 
 const CreateLeaf = (props) => {
   const getKey = () => new Date().toLocaleTimeString();
@@ -21,8 +20,8 @@ const CreateLeaf = (props) => {
   };
 
   const handleSubmit = (e) => {
-    // console.log(e.target.name);
-    leafData.push(newleaf);
+    props.addLeaf(newleaf);
+
     setNewleaf({
       id: getKey(),
       title: "New work!",
