@@ -9,11 +9,20 @@ const Leaf = (props) => {
       <div className={leafStyle}>
         <h2 className={styles.leafTitle}>{props.title}</h2>
         <p className={styles.leafContent}>{props.content}</p>
-        <input
-          className={styles.checkBox}
-          type="checkbox"
-          onChange={() => {
+        <button
+          className={styles.deleteBtn}
+          onClick={() => {
             props.onDelete(props.id);
+          }}
+        >
+          <i className="fa fa-trash"></i>
+        </button>
+        <input
+          type="checkbox"
+          className={styles.checkbox}
+          onChange={(e) => {
+            if (e.target.checked) setleafStyle((prev) => doneStyle);
+            else setleafStyle((prev) => activeStyle);
           }}
         ></input>
       </div>

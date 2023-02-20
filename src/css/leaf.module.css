@@ -35,12 +35,35 @@
   color: white;
   font-size: 1.17rem;
 }
-.checkBox {
+.checkbox {
+  /* background-color: lightgreen;
+  border: none;
+  color: black; */
+  cursor: pointer;
   position: absolute;
+  font-size: 1.15rem;
+  bottom: 2px;
+  left: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 10px;
+}
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  color: dodgerblue;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.35rem;
   bottom: 2px;
   right: 2px;
-  width: 20px;
-  height: 20px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 10px;
+}
+.deleteBtn:hover {
+  /* background-color: royalblue; */
+  color: red;
 }
 .newLeafTitle {
   background-color: transparent;
