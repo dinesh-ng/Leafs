@@ -12,10 +12,11 @@ const CreateLeaf = (props) => {
 
   const handleChange = (e) => {
     // console.log(e.target.name);
+    const { name, value } = e.target;
     setNewleaf((prev) => ({
       ...prev,
       id: getKey(),
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
